@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>隐私政策</title>
+	</head>
+	<style>
+		#page {
+			width: 96%;
+			height: auto;
+			padding: 10px 0;
+			font-size: 14px;
+			margin: 0 auto;
+		}
+	</style>
+	<body>
+		<div id="page">
+				<h4>
+					<b>版本号：v0</b><br />
+					<b>Web编程隐私政策</b>
+				</h4>
+				<h4>关于本隐私政策</h4>
+				<p>如果您对本隐私政策中描述的数据处理实践有任何疑问，请通过 邮箱方式：webpro2022@163.com 联系我们，以便我们处理您的特殊需求。我们很高兴收到您的反馈。</p>
+				<p>
+					<b>
+						我们的产品集成友盟+SDK，友盟+SDK需要收集您的设备Mac地址、唯一设备识别码（IMEI/android ID/IDFA/OPENUDID/GUID、SIM 卡 IMSI
+						信息）以提供统计分析服务，并通过地理位置校准报表数据准确性，提供基础反作弊能力。
+					</b>
+				</p>
+				<p>
+					<b>
+						应用运营方（赞皇威达软件工作室）的产品基于DCloud uni-app(5+ App/Wap2App)开发，应用运行期间需要收集您的设备唯一识别码（IMEI/android
+						ID/DEVICE_ID/IDFA、SIM卡
+						IMSI信息、OAID）以提供统计分析服务，并通过应用启动数据及异常错误日志分析改进性能和用户体验，为用户提供更好的服务。详情内容请访问《DCloud用户服务条款》。（DCloud用户服务条款超链至：https://ask.dcloud.net.cn/protocol.html）
+						
+						主体名称：oaid-sdk,MSA移动安全联盟SDK,数字天堂SDK
+						行为名称：获取OAID
+						行为发生范围：应用启动后
+						行为目的：提供统计分析服务，并通过应用启动数据及异常错误日志分析改进性能和用户体验，为用户提供更好的服务
+					</b>
+				</p>
+				<p>
+					<b>
+					    收集Android ID、IP、OAID、IMEI、安装列表、位置、传感器、MAC等的目的是：
+						1、识别广告、活动作弊行为；改善 SDK 崩溃率、推送个性化广告；广告投放
+						2、广告投放、广告归因、反作弊、安全
+						3、广告投放、广告归因、反作弊、安全
+						4、广告投放与监测归因、广告主统计投放结果、减少App崩溃、确保服务器正常运行、提升可扩展性和性能
+						5、广告投放合作、广告归因、反作弊
+						6、广告投放、广告主归因、反作弊
+						7、为最终用户提供安全保障、改善我们的产品和服务，开展内部审计、数据分析和研究
+					</b>
+				</p>
+				<h4>一、基本权限</h4>
+				<h5>
+					① android.permission.INTERNET
+				</h5>
+				<p>
+					使用网络权限，应用基础权限
+					权限使用说明：由于用户可能会使用网络来加载图片视频或在线文档等因此需要添加此权限来支持用户的基本操作。
+				</p>
+				<h5>
+					② android.permission.READ_EXTERNAL_STORAGE 和 android.permission.WRITE_EXTERNAL_STORAGE
+				</h5>
+				<p>
+					读写SD卡权限
+					权限使用说明：由于本应用最基本的功能是文件、文件夹的创建、增加、修改和删除，因此需要此权限来支持。
+				</p>
+				<h5>
+					③android.permission.READ_PHONE_STATE、ACCESS_NETWORK_STATE、ACCESS_WIFI_STATE
+				</h5>
+				<p>
+					读取设备标识使用，用于uni统计服务
+				</p>
+				<h5>
+					④android.permission.INSTALL_PACKAGES、android.permission.REQUEST_INSTALL_PACKAGES
+				</h5>
+				<p>
+					安装apk需要的权限，应用中使用plus.runtime.install (opens new window)升级应用则需要此权限
+				</p>
+				<h5>
+					⑤com.asus.msa.SupplementaryDID.ACCESS
+				</h5>
+				<p>
+					获取设备标识信息oaid在华硕设备上需要用到的权限
+				</p>
+				<h5>
+					⑥com.huawei.android.launcher.permission.CHANGE_BADGE
+				</h5>
+				<p>
+					设置应用角标功能在华为设备上需要用到的权限
+				</p>
+				<h5>
+					⑦com.android.launcher.permission.INSTALL_SHORTCUT
+				</h5>
+				<p>
+					创建桌面快捷方式权限，应用中使用plus.navigator.createShortcut 创建桌面快捷方式则需要此权限
+				</p>
+				<h5>
+					⑧com.android.launcher.permission.UNINSTALL_SHORTCUT
+				</h5>
+				<p>
+					删除桌面快捷方式权限，应用中使用native.js 删除桌面快捷方式则需要此权限
+				</p>
+				<h5>
+					⑨android.hardware.camera、android.hardware.camera.autofocus、android.permission.CAMERA
+				</h5>
+				<p>
+					获取相机使用权限，用于工具页面扫码功能的用户使用
+				</p>
+				<h4>
+					二、集成三方SDK所用到的权限
+				</h4>
+				<h5>
+					①推啊
+					sdk包名：engine.tuifish.com
+					可能获取的个人信息类型：
+					设备品牌、型号、操作系统版本、OAID、分辨率、IMEI、android ID、SIM 卡 IMSI 信息、应用名称、应用包名、应用版本号、网络信息、应用安装列表、位置信息
+				</h5>
+				<p>
+					权限列表：
+					android.permission.ACCESS_NETWORK_STATE
+					android.permission.READ_PHONE_STATE
+					android.permission.ACCESS_COARSE_LOCATION
+					使用目的：识别广告、活动作弊行为；改善 SDK 崩溃率、推送个性化广告；广告投放。
+				</p>
+				<h5>
+					②快手
+					sdk包名：com.kwad.sdk
+					可能获取的个人信息类型：
+					基础信息：设备品牌、设备型号、软件系统版本、存储信息、运营商信息、设备时区、设备语言、网络信息等基础信息 设备标识：IMEIs、MEID、OAID、Androidld、IMSIs、ICCID
+					位置信息：IP地址、MAC地址、GPS位置信息、基站信息、WIFI信息 应用信息：应用安装列表 其他信息：传感器信息、sim卡激活信息
+				</h5>
+				<p>
+					权限列表：
+					android.permission.ACCESS_NETWORK_STATE
+					android.permission.INTERNET
+					android.permission.READ_PHONE_STATE
+					android.permission.ACCESS_WIFI_STATE
+					android.permission.REQUEST_INSTALL_PACKAGES
+					android.permission.VIBRATE
+					使用目的：广告投放、广告归因、反作弊、安全
+				</p>
+				<h5>
+					③快手内容联盟
+					sdk包名：com.kwad.sdk
+					可能获取的个人信息类型：基础信息：设备品牌、设备型号、软件系统版本、存储信息、运营商信息、设备时区、设备语言、网络信息等基础信息 设备标识：IMEIs、MEID、OAID、Androidld、IMSIs、ICCID
+					位置信息：IP地址、MAC地址、GPS位置信息、基站信息、WIFI信息 应用信息：应用安装列表 其他信息：传感器信息、sim卡激活信息
+				</h5>
+				<p>
+					权限列表：
+					android.permission.ACCESS_NETWORK_STATE
+					android.permission.INTERNET
+					android.permission.READ_PHONE_STATE
+					android.permission.ACCESS_WIFI_STATE
+					android.permission.REQUEST_INSTALL_PACKAGES
+					android.permission.VIBRATE
+					android.permission.SET_WALLPAPER
+					android.permission.READ_EXTERNAL_STORAGE
+					android.permission.WRITE_EXTERNAL_STORAGE
+					android.permission.ACCESS_COARSE_LOCATION
+					android.permission.BLUETOOTH
+					使用目的：广告投放、广告归因、反作弊、安全
+				</p>
+				<h5>
+					④优量汇
+					sdk包名：com.qq.e
+					可能获取的个人信息类型：基站、附近的WIFI、连接的WIFI、位置信息、设备制造商、设备型号、操作系统版本、屏幕分辨率、屏幕方向、屏幕DPI、IP地址、加速度传感器、磁场传感器、OAID、IMEI/MEID（Device
+					ID）、Android_ID、包名、版本号、进程名称、运行状态、可疑行为、应用安装信息
+				</h5>
+				<p>
+					权限列表：
+					android.permission.INTERNET
+					android.permission.ACCESS_NETWORK_STATE
+					android.permission.ACCESS_WIFI_STATE
+					android.permission.REQUEST_INSTALL_PACKAGES
+					android.permission.CHANGE_NETWORK_STATE
+					android.permission.QUERY_ALL_PACKAGES
+					android.permission.REORDER_TASKS
+					android.permission.VIBRATE
+					android.permission.ACCESS_COARSE_LOCATION
+					使用目的：广告投放与监测归因、广告主统计投放结果、减少App崩溃、确保服务器正常运行、提升可扩展性和性能
+				</p>
+				<h5>
+					⑤穿山甲
+					sdk包名：com.bytedance.sdk.openadsdk
+					可能获取的个人信息类型：设备品牌、型号、软件系统版本、分辨率、网络信号强度、IP地址、设备语言、传感器信息等基础信息、无线网SSID名称、MAC地址、AndroidID、应用名、应用包名、版本号、应用前后台状态、应用列表信息、运营商信息、设备时区、设备序列号
+				</h5>
+				<p>
+					权限列表：
+					android.permission.ACCESS_NETWORK_STATE
+					android.permission.READ_PHONE_STATE
+					android.permission.WRITE_EXTERNAL_STORAGE
+					使用目的：广告投放合作、广告归因、反作弊
+				</p>
+				<h5>
+					⑥Sigmob
+					sdk包名：com.sigmob.windad
+					可能获取的个人信息类型：设备信息：设备品牌、型号、操作系统版本、OAID、分辨率等基础设备信息 应用信息：应用名称、应用包名、应用版本号等 其他：运营商信息、时区
+				</h5>
+				<p>
+					权限列表：android.permission.ACCESS_NETWORK_STATE
+					android.permission.INTERNET
+					android.permission.ACCESS_WIFI_STATE
+					android.permission.CHANGE_WIFI_STATE
+					android.permission.READ_PHONE_STATE
+					android.permission.REQUEST_INSTALL_PACKAGES
+					android.permission.QUERY_ALL_PACKAGES
+					使用目的：广告投放、广告主归因、反作弊
+				</p>
+				<h5>
+					⑦百度百青藤
+					sdk包名：com.baidu.mobads.proxy
+					可能获取的个人信息类型：设备信息：设备品牌、型号、软件系统版本、分辨率、网络信号强度、传感器信息，磁盘总空间、系统总内存空间、手机重启信息、手机系统更新时间等基础信息、OAID、AndroidID、屏幕宽高，屏幕像素密度，系统版本号，设备厂商，设备型号，手机运营商，手机网络状态，设备剩余存储空间，手机重启时间和更新时间
+					开发者应用信息：应用包名、应用前后台状态 设备信息：IMEI、IMSI、MEID 位置信息
+				</h5>
+				<p>
+					权限列表：android.permission.INTERNET
+					android.permission.ACCESS_NETWORK_STATE
+					android.permission.ACCESS_WIFI_STATE
+					android.permission.READ_PHONE_STATE
+					android.permission.ACCESS_COARSE_LOCATION
+					android.permissio.WRITE_EXTERNAL_STORAGE
+					使用目的：为最终用户提供安全保障、改善我们的产品和服务，开展内部审计、数据分析和研究
+				</p>
+				<h4>
+					三、敏感权限获取及说明
+				</h4>
+				<p>
+				<h5>
+					1、存储权限
+				</h5>
+				<b>
+					android.permission.READ_EXTERNAL_STORAGE 和 android.permission.WRITE_EXTERNAL_STORAGE
+					用途：读写SD卡权限，用于“访问设备上的照片、媒体内容和文件”，用于应用中文件及文件夹的创建，删除，修改和查询
+				</b>
+				</p>
+				<p>
+				<h5>
+					2、电话、网络、无线权限：
+				</h5>
+				<b>
+					android.permission.READ_PHONE_STATE、ACCESS_NETWORK_STATE、ACCESS_WIFI_STATE
+					用途：读取设备标识使用，用于uni统计服务
+				</b>
+				</p>
+				<p>
+				<h5>
+					3、位置权限
+				</h5>
+				<b>
+					android.permission.ACCESS_COARSE_LOCATION
+					用途：广告投放与监测归因、广告主统计投放结果、减少App崩溃、确保服务器正常运行、提升可扩展性和性能
+				</b>
+				</p>
+				<p>
+				<h5>4、分享权限</h5>
+		
+				<b>
+					android.permission.MODIFY_AUDIO_SETTINGS
+					android.permission.ACCESS_NETWORK_STATE
+					android.permission.ACCESS_WIFI_STATE
+					用途：用户在设置页点击 “分享本软件”时，会使用系统的分享权限及功能
+				</b>
+				</p>
+				<h4>四、其他权限说明</h4>
+				<p>
+					①关于MSA移动安全联盟 OAID、oaid-sdk,
+					移动智能终端补充设备标识体系与 SDK 隐私合规问题
+					移动智能终端补充设备标识体系与 SDK 严格遵守我国《网络安全法》、《数据安全法》和《电信和互联网用户个人信息保护规定》等相关法律法规和《信息安全技术 个人信息安全规范》等国家标准要求。SDK
+					不会主动收集任何数据，只在 APP 调用时获取以下数据，用于本地判断，不会进行任何网络传输：
+					设备制造商、设备型号、设备品牌，用于判断终端调用接口
+					设备网络运营商名称，用于判断虚拟机环境
+					APP 包名，用于校验签名
+				</p>
+				<p>
+					②关于com.kwad.sdk(快手)、com.kwad.sdk(快手内容联盟)、com.qq.e(优量汇)、com.bytedance.sdk.openadsdk(穿山甲)、com.sigmob.windad(Sigmob)、com.baidu.mobads.proxy(百度百青藤)收集Android
+					ID、OAID、传感器、MAC
+					有关包名：com.yxcorp.kuaishou、com.kwad.components、kssdk-ad、oaid-sdk
+					收集目的：广告投放、广告主归因、反作弊、广告投放与监测归因、广告主统计投放结果、减少App崩溃、确保服务器正常运行、提升可扩展性和性能
+				</p>
+				<p>
+					③关于数字天堂sdk获取MAC、OAID、传感器等个人信息
+					我们的产品基于DCloud uni-app(5+ App/Wap2App)开发，应用运行期间需要收集您的设备唯一识别码（IMEI/android ID/DEVICE_ID/IDFA、SIM 卡 IMSI
+					信息）以提供统计分析服务，并通过应用启动数据及异常错误日志分析改进性能和用户体验，为用户提供更好的服务。详情内容请访问<a
+						href="https://ask.dcloud.net.cn/protocol.html">《DCloud用户服务条款》</a>。
+				</p>
+				<h4>五、第三方隐私政策介绍</h4>
+				<p>
+					1、阿里weexSDK <a href="http://doc.weex.io/zh">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					2、Fresco图库 <a href="https://www.fresco-cn.org/">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					3、glide图库 <a href="http://bumptech.github.io/glide/">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					4、gif-drawable <a href="https://github.com/koral--/android-gif-drawable">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					5、fastjson <a href="https://github.com/alibaba/fastjson">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					6、移动安全联盟 OAID <a href="http://www.msa-alliance.cn/col.jsp?id=105">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					7、uni-AD <a
+						href="https://doc.dcloud.net.cn/markdown-share-docs/1d821cdd3cdf2681045ec4be94bc8404/">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					8、推啊 <a href="https://yun.tuia.cn/tuia/sdk/agreement/index.html">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					9、快手 <a href="https://www.kuaishou.com/about/policy/">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					10、快手内容联盟 <a href="https://www.kuaishou.com/about/policy">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					11、优量汇 <a href="https://e.qq.com/dev/help_detail.html?cid=2005&pid=5983">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					12、穿山甲 <a href="https://www.pangle.cn/privacy/partner">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					13、Sigmob <a
+						href="https://doc.sigmob.com/#/Sigmob%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/%E9%9A%90%E7%A7%81%E6%9D%A1%E6%AC%BE/%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96/">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					14、百度百青藤 <a href="https://union.baidu.com/bqt/#/legal/policies">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					15、腾讯浏览服务SDK <a href="https://x5.tencent.com/docs/privacy.html">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					15、微信开放平台 <a
+						href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=privacy">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					15、新浪开放平台 <a href="https://weibo.com/signup/v5/privacy?spm=a1zaa.8161610.0.0.4f8776217Wu8R1">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					15、QQ开放平台 <a href="https://ti.qq.com/agreement/qqface.html?appname=mqq_2019">隐私权政策链接/官网</a>
+				</p>
+				<p>
+					15、支付宝开放平台 <a href="https://render.alipay.com/p/c/k2cx0tg8">隐私权政策链接/官网</a>
+				</p>
+		
+		
+				<h4>
+					六、本隐私政策的更改
+				</h4>
+				<p>
+					(a)如果决定更改隐私政策，应用运营方（赞皇威达软件工作室）会在本政策中以及应用运营方（赞皇威达软件工作室）认为适当的位置发布这些更改，以便您了解应用运营方（赞皇威达软件工作室）如何收集、使用您的个人信息，哪些人可以访问这些信息，以及在什么情况下应用运营方（赞皇威达软件工作室）会透露这些信息。
+				</p>
+				<p>
+					(b)赞皇威达软件工作室保留随时修改本政策的权利，因此请经常查看。如对本政策作出重大更改，本人会通过网站通知的形式告知。
+				</p>
+			</div>
+	</body>
+</html>
